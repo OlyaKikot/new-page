@@ -28,8 +28,9 @@ p {
 ==========================*/
 .conteiner {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /* Header
 ==========================*/
@@ -160,7 +161,7 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-.works__inem {
+.works__item {
   width: 25%;
   height: 350px;
   position: relative;
@@ -168,7 +169,7 @@ p {
   border-bottom: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
 }
-.works__inem:hover .works__content {
+.works__item:hover .works__content {
   opacity: 1;
 }
 .works__foto {
@@ -203,4 +204,86 @@ p {
 .works__text {
   font-size: 14px;
   color: #ffffff;
+}
+/* team */
+
+.team {
+  margin: 100px 0 70px;
+}
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.team__item {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.team__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.team__name {
+  margin-bottom: 8px;
+  font-size: 22px;
+  color: #2d3033;
+}
+
+.team__proff {
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #e84545;
+  text-transform: uppercase;
+}
+.team__text {
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/*reviews  */
+
+.reviews {
+  background-color: #53354a;
+  overflow: hidden;
+}
+.reviews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews__photo {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+.reviews__img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.reviews__content {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.reviews__text {
+  margin-bottom: 20px;
+  font-family: "Cardo", "sans-serif";
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.reviews__autor {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
